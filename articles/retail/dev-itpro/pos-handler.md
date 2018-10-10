@@ -98,15 +98,15 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 
 | Request name                         | Description                                                          |
 |--------------------------------------|----------------------------------------------------------------------|
-| PrintPackingSlipClientRequestHandler | Executed when you print a packing slip from the store fulfillment view. |
+| PrintPackingSlipClientRequestHandler | Executed when you print a packing slip from the store fulfillment view. | 
 
 **Store operations request handler**
 
-| Request name                                       | Description                                                        |
-|----------------------------------------------------|--------------------------------------------------------------------|
-| CreateTenderRemovalTransactionClientRequestHandler | Executed when you do a tender removal operation in POS.              |
-| CreateFloatEntryTransactionClientRequestHandler    | Executed when you do a float entry operation in POS.                 |
-| SelectZipCodeInfoClientRequestHandler              | Executed when you key in zip code in address add/edit view in POS. |
+| Request name                                        | Description                                                        |
+|-----------------------------------------------------|--------------------------------------------------------------------|
+| CreateTenderRemovalTransactionClientRequestHandler  | Executed when you do a tender removal operation in POS.              |
+| CreateFloatEntryTransactionClientRequestHandler     | Executed when you do a float entry operation in POS.                 |
+| SelectZipCodeInfoClientRequestHandler               | Executed when you key in zip code in address add/edit view in POS. |		| LoyaltyCardPointsBalanceOperationRequestHandler     | Executed when you do a loyalty card balance operation in POS. |			| CreateStartingAmountTransactionClientRequestHandler |	Executed when you do a start amount declaration in POS.		|
 
 **Tender counting request handler**
 
@@ -115,7 +115,7 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 | CreateSafeDropTransactionClientRequestHandler          | Executed when you do a safe drop operation in POS.          |
 | GetTenderDetailsClientRequestHandler                   | Executed when you get tender declaration details in POS.  |
 | CreateBankDropTransactionClientRequestHandler          | Executed when you do a bank drop operation in POS.          |
-| CreateTenderDeclarationTransactionClientRequestHandler | Executed when you do a tender declaration operation in POS. |
+| CreateTenderDeclarationTransactionClientRequestHandler | Executed when you do a tender declaration operation in POS. |			 		
 
 **How to override a handler in POS**
 
