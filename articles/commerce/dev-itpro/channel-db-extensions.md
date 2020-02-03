@@ -125,10 +125,24 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 2. All the extension tables should have grant permission on **UserRole** and **DeployExtensibilityRole**.
 
     ```sql
+    --Tables:
+
+    GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[RETAILCUSTPREFERENCE] TO [UsersRole]
+    GO
+    
+    GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[RETAILCUSTPREFERENCE] TO [DeployExtensibilityRole]
+    GO
+    
+    --Stored procedures: 
+    
+    GRANT EXECUTE ON [ext].[EXTSTOREDPROCEDURE] TO [UsersRole];
+    GO
+    
+    GRANT EXECUTE ON [ext].[EXTTABLENAME] TO [PublishersRole];
+    GO
+    
     GRANT EXECUTE ON [ext].[EXTTABLENAME] TO [DeployExtensibilityRole];
-        GO
-        GRANT EXECUTE ON [ext].[EXTTABLENAME] TO [UsersRole];
-        GO
+    GO
     ```
 
 3. Grant **DataSyncUsersRole** permission if your table is going to send or eceive data from HQ.
