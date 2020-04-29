@@ -59,9 +59,6 @@ This topic explains how to log events to [Customer Application Insights](https:/
 
 4. Select **Create**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Create button](media/Create.png)
-
 5. On the **Basic** tab, set the **Subscription**, **Resource group**, **Name**, and **Region** fields.
 
     > [!div class="mx-imgBorder"]
