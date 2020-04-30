@@ -73,6 +73,9 @@ If you created a new HQ table and a new channel database table, follow these ste
      </RetailCdxSeedData>
     ```
 
+> [!NOTE]
+> The **DataAreaId** column name should not be explicitly included in the field mapping. This is automatically added by Commerce Data Exchange (CDX). If added, an error will occur during initialization of the retail scheduler.
+
 3. Use the AOT to create a new XML resource. In the XML file for the resource, specify the new table and new job details, as shown in the following example.
 
     > [!NOTE]
